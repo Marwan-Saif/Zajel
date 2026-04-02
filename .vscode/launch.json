@@ -1,0 +1,47 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "📱 Customer - Dev",
+            "request": "launch",
+            "type": "dart",
+            "program": "lib/customer_app/main_dev.dart",
+            "args": ["--flavor", "customerDev"]
+        },
+        {
+            "name": "📱 Customer - Staging",
+            "request": "launch",
+            "type": "dart",
+            "program": "lib/customer_app/main_stg.dart",
+            "args": ["--flavor", "customerStg"]
+        },
+        {
+            "name": "📱 Customer - Prod",
+            "request": "launch",
+            "type": "dart",
+            "program": "lib/customer_app/main_prod.dart",
+            "args": ["--flavor", "customerProd"]
+        },
+        {
+            "name": "🛵 Delivery - Dev",
+            "request": "launch",
+            "type": "dart",
+            "program": "lib/delivery_app/main_dev.dart",
+            "args": ["--flavor", "deliveryDev"]
+        },
+        {
+            "name": "🛵 Delivery - Staging",
+            "request": "launch",
+            "type": "dart",
+            "program": "lib/delivery_app/main_stg.dart",
+            "args": ["--flavor", "deliveryStg"]
+        },
+        {
+            "name": "🛵 Delivery - Prod",
+            "request": "launch",
+            "type": "dart",
+            "program": "lib/delivery_app/main_prod.dart",
+            "args": ["--flavor", "deliveryProd"]
+        }
+    ]
+}

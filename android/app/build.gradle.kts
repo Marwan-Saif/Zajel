@@ -30,6 +30,44 @@ android {
         versionName = flutter.versionName
     }
 
+    flavorDimensions += "app_env"
+
+    productFlavors {
+        // --- 📱 Flavors تطبيق العميل ---
+        create("customerDev") {
+            dimension = "app_env"
+            applicationIdSuffix = ".customer.dev"
+            resValue("string", "app_name", "\"Zajel C-Dev\"")
+        }
+        create("customerStg") { // Pre-production
+            dimension = "app_env"
+            applicationIdSuffix = ".customer.stg"
+            resValue("string", "app_name", "\"Zajel C-Stg\"")
+        }
+        create("customerProd") { // النسخة النهائية للستور
+            dimension = "app_env"
+            applicationIdSuffix = ".customer"
+            resValue("string", "app_name", "\"Zajel\"")
+        }
+
+        // --- 🛵 Flavors تطبيق المندوب ---
+        create("deliveryDev") {
+            dimension = "app_env"
+            applicationIdSuffix = ".delivery.dev"
+            resValue("string", "app_name", "\"Zajel D-Dev\"")
+        }
+        create("deliveryStg") { // Pre-production
+            dimension = "app_env"
+            applicationIdSuffix = ".delivery.stg"
+            resValue("string", "app_name", "\"Zajel D-Stg\"")
+        }
+        create("deliveryProd") { // النسخة النهائية للستور
+            dimension = "app_env"
+            applicationIdSuffix = ".delivery"
+            resValue("string", "app_name", "\"Zajel Delivery\"")
+        }
+    }
+
     buildTypes {
         release {
             // TODO: Add your own signing config for the release build.
@@ -37,6 +75,7 @@ android {
             signingConfig = signingConfigs.getByName("debug")
         }
     }
+    
 }
 
 flutter {
