@@ -1,7 +1,17 @@
 import 'package:flutter/material.dart';
+import 'package:firebase_core/firebase_core.dart';
+// استدعاء ملف مفاتيح الـ Dev
+import '../core/firebase/firebase_options_dev.dart'; 
 
-void main() {
-  // هنا بعدين هنحط كود ربط فايربيز الخاص ببيئة الـ Dev للعميل
+void main() async {
+  // السطر ده مهم جداً قبل تهيئة فايربيز
+  WidgetsFlutterBinding.ensureInitialized(); 
+
+  // تهيئة فايربيز باستخدام المفاتيح بتاعة الـ Dev
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
+
   runApp(const CustomerDevApp());
 }
 

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "774171637324",
+    "project_id": "zajel-prod-g",
+    "storage_bucket": "zajel-prod-g.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:774171637324:android:0fbd423f2435f3b0f526e9",
+        "android_client_info": {
+          "package_name": "com.example.zajel.customer"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD4KnWDoYnZElHlvcT8dlAsjT0PXRmZMbk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:774171637324:android:7c880acc52164c3ef526e9",
+        "android_client_info": {
+          "package_name": "com.example.zajel.delivery"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD4KnWDoYnZElHlvcT8dlAsjT0PXRmZMbk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
